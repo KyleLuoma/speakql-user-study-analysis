@@ -1,0 +1,5 @@
+*ipynb_checkpoints*
+*__pycache*
+*.png
+*.pdf
+*_db_info.json
