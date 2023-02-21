@@ -57,6 +57,9 @@ SELECT
     (sp.rt_speakql - sq.rt_sql) as rt_diff,
     (sp.rt_speakql - sq.rt_sql) / ((sp.rt_speakql + sq.rt_sql) / 2) as rt_perc_diff,
 
+    (sp.tt_all_speakql - sq.tt_all_sql) as tot_tt_diff,
+    (sp.tt_all_speakql - sq.tt_all_sql) / ((sp.tt_all_speakql + sq.tt_all_sql) / 2) as tot_tt_perc_diff,
+
     sp.attemptnum_speakql - sq.attemptnum_sql as attemptnum_diff,
     
     sp.idsequence, sp.speakql_first, sp.ispractice,
